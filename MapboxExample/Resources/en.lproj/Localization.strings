@@ -1,0 +1,21 @@
+/* 
+  Localization.strings
+  MapboxExample
+
+  Created by Michael Liptuga on 29.03.2020.
+  Copyright © 2020 Michael Liptuga. All rights reserved.
+*/
+
+// MARK: - Map Screen
+"saveButtonTitle" = "Save";
+"continueButtonTitle" = "Continue";
+
+// MARK: - Errors
+"invalidJSONError" = "Invalid JSON";
+"locationDisabledError" = "Please allow MapboxExample to use your location when using";
+"locationCantBeFetched" = "Error while getting location";
+"invalidRequest" = "Invalid request";
+"maxCoordinatesNumberReachedError" = "Maximum coordinates number is reached, please remove unused coordinates at first";
+
+// MARK: - Alert
+"errorAlertTitle" = "Error";

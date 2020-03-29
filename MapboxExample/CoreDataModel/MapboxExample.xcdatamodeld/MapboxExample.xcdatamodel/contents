@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDMapboxDirectionModel" representedClassName="CDMapboxDirectionModel" syncable="YES" codeGenerationType="class">
+        <attribute name="code" optional="YES" attributeType="String"/>
+        <attribute name="uuid" optional="YES" attributeType="String"/>
+        <relationship name="routes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDMapboxRouteModel"/>
+        <relationship name="waypoints" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDMapboxWaypoints"/>
+    </entity>
+    <entity name="CDMapboxGeometryModel" representedClassName="CDMapboxGeometryModel" syncable="YES" codeGenerationType="class">
+        <attribute name="coordinates" optional="YES" attributeType="Transformable" customClassName="[[Double]]"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CDMapboxLegsModel" representedClassName="CDMapboxLegsModel" syncable="YES" codeGenerationType="class">
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String"/>
+        <attribute name="weight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CDMapboxRouteModel" representedClassName="CDMapboxRouteModel" syncable="YES" codeGenerationType="class">
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="weightName" optional="YES" attributeType="String"/>
+        <relationship name="geometry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDMapboxGeometryModel"/>
+        <relationship name="legs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDMapboxLegsModel"/>
+    </entity>
+    <entity name="CDMapboxWaypoints" representedClassName="CDMapboxWaypoints" syncable="YES" codeGenerationType="class">
+        <attribute name="distance" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="location" optional="YES" attributeType="Transformable" customClassName="[Double]"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="CDMapboxDirectionModel" positionX="-167.41015625" positionY="-296.49609375" width="128" height="103"/>
+        <element name="CDMapboxRouteModel" positionX="-269.73046875" positionY="-8.67578125" width="128" height="133"/>
+        <element name="CDMapboxLegsModel" positionX="-28.55859375" positionY="123.33984375" width="128" height="103"/>
+        <element name="CDMapboxGeometryModel" positionX="-64.19921875" positionY="-171.359375" width="128" height="73"/>
+        <element name="CDMapboxWaypoints" positionX="285.359375" positionY="-176.90234375" width="128" height="88"/>
+    </elements>
+</model>

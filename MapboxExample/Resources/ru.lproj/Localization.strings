@@ -1,0 +1,23 @@
+/* 
+  Localization.strings
+  MapboxExample
+
+  Created by Michael Liptuga on 29.03.2020.
+  Copyright © 2020 Michael Liptuga. All rights reserved.
+*/
+
+
+// MARK: - Map Screen
+"saveButtonTitle" = "Сохранить";
+"continueButtonTitle" = "Продолжить";
+
+// MARK: - Errors
+"invalidJSONError" = "Ошибка JSON";
+"locationDisabledError" = "Пожалуйста, позвольте использовать Ваше местонахождение во время использования приложения";
+"locationCantBeFetched" = "Ошибка получения Вашего местонахождение";
+"invalidRequest" = "Ошибка запроса. Попробуйте еще раз.";
+"maxCoordinatesNumberReachedError" = "Достигнуто максимальное количество координат, сначала удалите неиспользуемые координаты";
+
+// MARK: - Alert
+"errorAlertTitle" = "Ошибка";
+
